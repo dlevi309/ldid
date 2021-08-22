@@ -3089,15 +3089,13 @@ std::string Hex(const uint8_t *data, size_t size) {
 }
 
 static void usage(const char *argv0) {
-    fprintf(stderr, "usage: %s -S[entitlements.xml] <binary>\n", argv0);
-    fprintf(stderr, "   %s -e MobileSafari\n", argv0);
-    fprintf(stderr, "   %s -S cat\n", argv0);
-    fprintf(stderr, "   %s -Stfp.xml gdb\n", argv0);
-    fprintf(stderr, "\n");
-    fprintf(stderr, "Other Options\n");
-    fprintf(stderr, "   -Kkey.p12     Sign using private key in key.p12\n");
-    fprintf(stderr, "   -M            Merge entitlements with any existing\n");
-    fprintf(stderr, "   -h            Print CDHash of file\n");
+    fprintf(stderr,"\e[0;36mUsage: ldid [options] <input>\e[0;0m\n");
+    fprintf(stderr,"Options:\n");
+    fprintf(stderr,"  \e[0;36m-e\e[0;0m          Print any existing entitlements\n");
+    fprintf(stderr,"  \e[0;36m-S[ent.xml]\e[0;0m Self-sign binary\n");
+    fprintf(stderr,"  \e[0;36m-K\e[0;0m          Sign using private key in key.p12\n");
+    fprintf(stderr,"  \e[0;36m-M\e[0;0m          Merge entitlements with any existing\n");
+    fprintf(stderr,"  \e[0;36m-h\e[0;0m          Print CDHash of file\n");
 }
 
 #ifndef LDID_NOTOOLS
