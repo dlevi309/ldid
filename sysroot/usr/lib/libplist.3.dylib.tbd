@@ -1,0 +1,37 @@
+---
+archs:           [ arm64 ]
+platform:        ios
+install-name:    /usr/lib/libplist.3.dylib
+current-version: 7.0
+compatibility-version: 7.0
+exports:         
+  - archs:           [ arm64 ]
+    symbols:         [ _plist_access_path, _plist_access_pathv, _plist_array_append_item, 
+                       _plist_array_get_item, _plist_array_get_item_index, 
+                       _plist_array_get_size, _plist_array_insert_item, 
+                       _plist_array_item_remove, _plist_array_new_iter, 
+                       _plist_array_next_item, _plist_array_remove_item, 
+                       _plist_array_set_item, _plist_bool_val_is_true, 
+                       _plist_compare_node_value, _plist_copy, _plist_data_val_compare, 
+                       _plist_data_val_compare_with_size, _plist_data_val_contains, 
+                       _plist_date_val_compare, _plist_dict_get_item, _plist_dict_get_item_key, 
+                       _plist_dict_get_size, _plist_dict_insert_item, _plist_dict_item_get_key, 
+                       _plist_dict_merge, _plist_dict_new_iter, _plist_dict_next_item, 
+                       _plist_dict_remove_item, _plist_dict_set_item, _plist_free, 
+                       _plist_from_bin, _plist_from_memory, _plist_from_xml, 
+                       _plist_get_bool_val, _plist_get_data_ptr, _plist_get_data_val, 
+                       _plist_get_date_val, _plist_get_key_val, _plist_get_node_type, 
+                       _plist_get_parent, _plist_get_real_val, _plist_get_string_ptr, 
+                       _plist_get_string_val, _plist_get_uid_val, _plist_get_uint_val, 
+                       _plist_is_binary, _plist_key_val_compare, _plist_key_val_compare_with_size, 
+                       _plist_key_val_contains, _plist_new_array, _plist_new_bool, 
+                       _plist_new_data, _plist_new_date, _plist_new_dict, 
+                       _plist_new_real, _plist_new_string, _plist_new_uid, 
+                       _plist_new_uint, _plist_real_val_compare, _plist_set_bool_val, 
+                       _plist_set_data_val, _plist_set_date_val, _plist_set_key_val, 
+                       _plist_set_real_val, _plist_set_string_val, _plist_set_uid_val, 
+                       _plist_set_uint_val, _plist_string_val_compare, 
+                       _plist_string_val_compare_with_size, _plist_string_val_contains, 
+                       _plist_to_bin, _plist_to_bin_free, _plist_to_xml, 
+                       _plist_to_xml_free, _plist_uid_val_compare, _plist_uint_val_compare ]
+...
